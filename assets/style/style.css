@@ -9,3 +9,8 @@
 .profile-picture.profile-picture-sm {
   height: 64px;
 }
+
+#pokemonList {
+  height: 82vh;
+  overflow-y: scroll;
+}
