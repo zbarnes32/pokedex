@@ -3,7 +3,8 @@ import { pokeApi } from "./AxiosService.js";
 
 class PokemonService {
     async getPokemonDetails(pokemonName) {
-        const response = await pokeApi.get(`pokemon/${name}`)
+        const response = await pokeApi.get(`pokemon/${pokemonName}`)
+        console.log(pokemonName)
         console.log('Did we get it?', response.data)
     }
     async getPokemon(){

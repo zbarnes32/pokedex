@@ -8,7 +8,6 @@ export class PokemonController {
         // ✅ console.log('Pokemon Controller reporting for duty!')
         AppState.on('pokemon', this.drawPokemon)
         this.getPokemon()
-        this.getPokemonDetails()
     }
     async getPokemon() {
         try {
