@@ -10,6 +10,11 @@
   height: 64px;
 }
 
+.sprites-styling {
+  height: 75px;
+  width: 100%;
+}
+
 #pokemonList {
   height: 82vh;
   overflow-y: scroll;

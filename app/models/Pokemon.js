@@ -1,5 +1,5 @@
 export class Pokemon {
-    constructor(data){
+    constructor(data) {
         this.name = data.name
         this.nickname = data.nickname
         this.img = data.img
@@ -8,6 +8,22 @@ export class Pokemon {
         this.types = data.types
     }
 
+    get pokedexEntryTemplate() {
+        return `
+                <div class="col-12">
+                    <h2>${this.name}</h2>
+                    <p>${this.nickname}</p>
+                    <div>
+                        <img class="sprites-styling" src="${this.img}" alt="pokemon name">
+                    </div>
+                    <div>
+                        <p class="fs-4">${this.types}</p>
+                        <p>${this.weight}</p>
+                        <p>${this.height}</p>
+                    </div>
+                </div>
+        `
+    }
 }
 
 // const sandboxApiExample(){
